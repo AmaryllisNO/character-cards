@@ -1,0 +1,4 @@
+.section {
+    padding: 0 $pageSpacing*1.5 $pageSpacing $pageSpacing*1.5;
+    background-color: map-get($colours , bgColour );
+}

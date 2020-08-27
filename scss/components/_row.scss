@@ -1,0 +1,42 @@
+.row {
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap;
+
+    &__column {
+        width: 100%;
+
+        &--space {
+            *+& {
+                margin-top: $pageSpacing;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .row {
+
+
+        &--unpad {
+            margin: 0 (-$pageSpacing/1);
+        }
+
+        &__column {
+            width: 100%;
+
+            &--space {
+                margin: 0;
+                padding: 0 $pageSpacing/2;
+            }
+
+            &--desktop-2 {
+                width: 50%;
+            }
+
+            &--desktop-3 {
+                width: 33%;
+            }
+        }
+    }
+}

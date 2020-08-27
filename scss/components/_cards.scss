@@ -1,0 +1,63 @@
+.box {
+    min-height: $cardHeight;
+    border-radius: 0;
+    overflow: hidden;
+    border: none;
+    margin: 0 0 $pageSpacing*3 0;
+    background-color: map-get($colours , bgColour ); 
+    color: rgb(197, 197, 197);
+    transition: 0.6s;
+
+    &:hover {
+        box-shadow: $redNeon;
+    }
+}
+
+.card__img--dark {
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card--dark {
+    border-color: black !important;
+}
+
+.card__button {
+    background-color: map-get($colours , bgColour);
+    border: none;
+    border-radius: 0;
+    border-left: map-get($colours , secondary ) 3px solid;
+    display: relative;
+    color: map-get($colours , secondary );
+
+   /*  &::before {
+        content: "";
+        display: block;
+        background-color: map-get($colours , secondary );
+        height: 2px; 
+        width: 100%;
+        position: absolute;
+        
+        width: 20px;
+        overflow: auto;
+    } */
+
+    &:active {
+        background-color: map-get($colours , secondary);
+        border: none;
+    }
+
+    &:hover {
+       /*  box-shadow: 0px 0px 10px 3px rgba(253, 11, 64, 0.726); */
+        background-color: map-get($colours , secondary);
+        border-left: map-get($colours , secondary) 3px solid;
+    }
+
+
+}

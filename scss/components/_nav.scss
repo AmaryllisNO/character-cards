@@ -1,0 +1,53 @@
+.nav {
+    padding: $pageSpacing/2 $pageSpacing $pageSpacing/2 $pageSpacing;
+
+    &__list {
+        list-style: none;
+        margin: 0; 
+        padding: 0;
+
+        position: relative;
+    }
+
+    &__item {
+        display: inline;
+        
+    }
+
+    &__link {
+        color: white;
+        max-width: 33%;
+        text-transform: uppercase;
+
+        &--active {
+            max-width: 33%; 
+            color: map-get($colours, primary);
+            
+        }
+        
+
+
+        &--active::before {
+            transition: 0.2s;
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: map-get($colours, primary);
+
+            position: absolute;
+            top: 36px;
+            width: 20px;
+            overflow: auto;
+        }
+
+        &--active:hover::before {
+            width: 100%;
+          }
+          
+    }
+
+    &__link:hover {
+        color: map-get($colours, primary); 
+        text-decoration: none;
+    }
+}
