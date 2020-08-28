@@ -144,6 +144,36 @@ h1, h2, h3, h4 {
   z-index: 10;
 }
 
+.card__listvalue--HP::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #be2546;
+  position: absolute;
+  top: 165px;
+  width: 100%;
+}
+
+.card__listvalue--MP::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #3887bb;
+  position: absolute;
+  top: 189px;
+  width: 100%;
+}
+
+.card__listvalue--STA::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #389760;
+  position: absolute;
+  top: 213px;
+  width: 100%;
+}
+
 .card__listvalue--EXP::before {
   content: "";
   display: block;
