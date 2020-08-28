@@ -117,9 +117,51 @@ h1, h2, h3, h4 {
 }
 
 .card__content {
+  background-color: rgba(29, 32, 41, 0.61);
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+}
+
+.card__content .card__list {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card__content .card__list--values {
+  min-width: 220px;
+}
+
+.card__content .card__listitem {
+  display: block;
+}
+
+.card__listvalue {
+  padding-left: 30px;
+  z-index: 10;
+}
+
+.card__listvalue--EXP::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #7a7a7a;
+  position: absolute;
+  top: 141px;
+  width: 100%;
+}
+
+.card__listvalue--EXP::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 141px;
+  width: 55%;
 }
 
 .card--dark {
