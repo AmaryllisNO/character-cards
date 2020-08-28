@@ -2,7 +2,8 @@
     color: white;
     background-color: map-get($colours , bgColour );
     margin: 0;
-    padding: 1em $pageSpacing 1em $pageSpacing;
+    padding: 2em $pageSpacing 1em $pageSpacing;
     text-align: center;
     text-transform: uppercase;
+    z-index: 999;
 }
